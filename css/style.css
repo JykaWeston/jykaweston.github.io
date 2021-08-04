@@ -1,0 +1,110 @@
+:root {
+  scrollbar-width: none;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 20vw;
+  background-color: aqua;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  right: 0;
+  top: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section {
+  display: flex;
+  margin-left: 30px;
+  padding-bottom: 100px;
+  margin-left: 30px;
+  border-bottom: rgb(112, 112, 112) 1px solid;
+}
+
+.section-title {
+  width: 30%;
+  color: rgb(33, 57, 160);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+#main h1 {
+  text-transform: none;
+}
+
+.presentation {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-header {
+  display: inline-block;
+}
+
+.p-description {
+  font-size: 20px;
+}
+
+.date {
+  color: rgb(202, 191, 40);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  margin-right: 25px;
+}
+
+.title {
+  display: table;
+}
+
+.tag {
+  padding: 2px 5px 2px 0;
+  border: blueviolet 3px solid;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: small;
+}
+
+.tag::before {
+  content: "#";
+  background-color: blueviolet;
+  padding: 5px;
+  margin-right: 4px;
+  border-radius: 25px 0 0 25px;
+  color: white;
+}
+
+.grid-4 {
+  display: flex;
+}
